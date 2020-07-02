@@ -1,0 +1,22 @@
+https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/2-x/rest_cfg/2_1_x/b_Cisco_APIC_REST_API_Configuration_Guide/b_Cisco_APIC_REST_API_Configuration_Guide_chapter_01.html
+
+
+
+https://developer.cisco.com/docs/aci/#!introduction/aci-programmability
+
+https://pubhub.devnetcloud.com/media/apic-mim-ref-221/docs/MO-fvCtx.html
+
+https://community.cisco.com/t5/data-center-documents/aci-automation-part-3-aci-with-postman-on-configuring-multiple/ta-p/3320170
+
+https://community.cisco.com/t5/data-center-documents/aci-automation-part-2-aci-with-postman-configuring-single-epg/ta-p/3318255
+
+https://aciandme.wordpress.com/2017/05/26/sample-postman-scripts/
+
+
+The Policy Driven Data Center with ACI: Architecture, Concepts, and Methodology (Networking Technology) Kindle Edition---BOOK
+
+
+
+
+
+

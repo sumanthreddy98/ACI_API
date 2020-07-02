@@ -1,0 +1,97 @@
+
+1.APIC integration with the postman
+
+https://sandboxapicdc.cisco.com/api/aaaLogin.json?gui-token-request=yes
+
+{
+    "aaaUser" : {
+        "attributes" : {
+            "name" : "admin",
+            "pwd" : "ciscopsdt"
+        }
+    }
+}
+
+----------------------------------------------------------------------------
+
+
+2.Creating the Tenant
+
+APIC-challenge-------urlToken value form authentication api
+
+Teanat = SUNN
+
+
+https://sandboxapicdc.cisco.com/api/node/mo/uni.xml
+
+<fvTenant name="SUNN"/>
+
+
+------------------------------------------------------------------------
+
+3.Creating VRF and BD
+
+VRF=SUNN1
+
+BD=UNNbd1
+
+
+https://sandboxapicdc.cisco.com/api/node/mo/uni/tn-SUNN.xml
+
+
+<fvTenant name="SUNN">
+   <fvCtx name="SUNN1"/>
+   <fvBD name="SUNNbd1">
+      <fvRsCtx tnFvCtxName="SUNN1"/>
+      <fvSubnet ip="10.10.100.10/24"/>
+   </fvBD>      
+</fvTenant>
+
+
+--------------------------------------------------------------------------------
+
+4. Application Profile
+
+https://sandboxapicdc.cisco.com/api/node/mo/uni/tn-SUMTENANT/ap-TEST9871.json
+
+Application profile=TEST9871
+
+{
+"fvAp":{
+"attributes":{
+"dn":"uni/tn-SUMTENANT/ap-TEST9871",
+"name":"TEST9871",
+"rn":"ap-TEST9871",
+"status":"created"
+},
+"children":[]
+}
+}
+
+---------------------------------------------------------------------------
+
+5.Creating EPG
+
+https://sandboxapicdc.cisco.com/api/node/mo/uni/tn-SUMTENANT/ap-TEST9871/epg-MEX1.json
+
+EPG=MEX1
+
+
+
+{
+"fvAEPg":{
+"attributes":{
+"dn":"uni/tn-SUMTENANT/ap-TEST9871/epg-MEX1",
+"name":"MEX1",
+"rn":"epg-MEX1",
+"status":"created"
+},
+"children":[{"fvRsBd":{"attributes":{"tnFvBDName":"SUMBD","status":"created,modified"},
+"children":[]
+}
+}
+]}
+}
+
+-----------------------------------------------------------------------------------
+
